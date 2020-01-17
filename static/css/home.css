@@ -1,0 +1,76 @@
+/*
+div, span, p{
+    border: 1px solid red;
+}
+*/
+
+html,
+body {
+  height: 100%;
+  margin: 0
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box {
+    width: 100%;
+    /*border-radius: 25px;*/
+    /*box-shadow: 0 0 0 1px #c0c0c0;*/
+    /*border: 5px solid transparent;*/
+}
+.box:focus {
+    outline:none;
+}
+
+.row {
+	margin: 0
+}
+
+/* topbar */
+.box .row.header {
+  flex: 0 1 auto;
+  background-color: #333;
+}
+
+/* Links inside the topbar */
+.row.header a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change topbar background on mouse-over */
+.row.header a:hover{
+  background: #ddd;
+  color: black;
+}
+
+/* botbar */
+.box .row.footer {
+  flex: 0 1 40px;
+  background-color: #333;
+}
+
+/* Links inside the botbar */
+.row.footer a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.box .row.content {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}

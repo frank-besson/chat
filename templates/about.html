@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html>
+   	<head>
+		<title>{{room}}</title>
+		<meta title="{{namespace}}">
+		<meta name="description" content="Free learning resources">
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--user-scalable=no-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<style>body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}</style>
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+	</head>
+	<body >
+	<div class="box" style="margin:0;padding:0">
+		<div class="row header" style="margin:0;padding:0">
+			<a style="float:left;" href="{{ url_for('index')}}">General</a>
+			<a style="float:left;" href="{{ url_for('join')}}">Join Chat</a>
+			<a style="float:right;" href="{{ url_for('about')}}">About</a>
+		</div>
+		<div class="row content w3-container w3-white" style="margin-top:18px">
+			<p>
+				<h3> It's a socket server </h3>
+				Lorem ipsum dolor sit amet, no nec dicam omnium saperet. Cu vix quot timeam vituperata, aeque omittantur mea no. Quo ne quis sale assum, at vitae bonorum salutatus vix, postulant complectitur sed an. Et vis solum velit, eu eam offendit luptatum. Nobis tamquam vocibus ne nec, ne sea diceret sensibus.
+				<br><br>
+				Lorem ipsum dolor sit amet, no nec dicam omnium saperet. Cu vix quot timeam vituperata, aeque omittantur mea no. Quo ne quis sale assum, at vitae bonorum salutatus vix, postulant complectitur sed an. Et vis solum velit, eu eam offendit luptatum. Nobis tamquam vocibus ne nec, ne sea diceret sensibus.
+				<br><br>
+				Lorem ipsum dolor sit amet, no nec dicam omnium saperet. Cu vix quot timeam vituperata, aeque omittantur mea no. Quo ne quis sale assum, at vitae bonorum salutatus vix, postulant complectitur sed an. Et vis solum velit, eu eam offendit luptatum. Nobis tamquam vocibus ne nec, ne sea diceret sensibus.
+			</p>
+		</div>
+		<div class="row footer">
+			<a style="float:right;">Made By Frank Besson</a>
+		</div>
+	</div>
+	</body>
+ </html>
