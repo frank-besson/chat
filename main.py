@@ -41,7 +41,7 @@ def left(message):
     emit('status', {'msg': session.get('name') + ' has left the room', 'namespace':target}, room=room)
 
 class DevelopmentConfig():
-	SECRET_KEY  = 'x-yNA`mr#=/?RT0`^?9n);D[#~BR7C;9kd2iY^">zC,Z|_%E1{<!;[en4Op${e'
+	SECRET_KEY  = os.environ['SECRETKEY']
 	PORT        = int(os.environ.get('PORT', 33507))
 	DEBUG 	    = True
 	DEVELOPMENT = True
